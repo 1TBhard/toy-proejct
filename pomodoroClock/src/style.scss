@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
+
+$appWidth: 500px;
+$elementSpace: 50px;
+$btnFontSize: 20px;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	color: #cfcfcf;
+	font-family: "Orbitron", sans-serif;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #547980;
+}
+
+@mixin center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.App {
+	@include center;
+	width: $appWidth;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#main-title {
+	margin-bottom: $elementSpace * 1.2;
+	font-size: 50px;
+}
+
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn-wrapper {
+	padding: 10px 20px;
+
+	border-radius: 5px;
+	border: 2px solid #8c8c8c;
+
+	& h2 {
+		padding-bottom: 15px;
+	}
+
+	& button {
+		padding: 5px 10px;
+		font-size: $btnFontSize;
+	}
+
+	& h3 {
+		font-size: $btnFontSize * 1.2;
+		margin: 0 10px;
+	}
+}
+
+#timer-display {
+	margin: $elementSpace * 0.5 0;
+	#timer-label {
+		font-size: 40px;
+	}
+	#time-left {
+		font-size: 70px;
+		color: #cfcfcf;
+	}
+}
+
+#controller {
+	& > * {
+		margin: 0 30px;
+		padding: 5px 10px;
+		font-size: $btnFontSize;
+	}
+}
+
+button {
+	border-radius: 10px;
+	border: none;
+
+	background-color: #594f4f;
+}

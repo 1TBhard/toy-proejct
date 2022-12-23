@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  color: #cfcfcf;
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #547980;
+}
+
+.App {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#main-title {
+  margin-bottom: 60px;
+  font-size: 50px;
+}
+
+.flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn-wrapper {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #8c8c8c;
+}
+
+.btn-wrapper h2 {
+  padding-bottom: 15px;
+}
+
+.btn-wrapper button {
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.btn-wrapper h3 {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+#timer-display {
+  margin: 25px 0;
+}
+
+#timer-display #timer-label {
+  font-size: 40px;
+}
+
+#timer-display #time-left {
+  font-size: 70px;
+  color: #cfcfcf;
+}
+
+#controller > * {
+  margin: 0 30px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  background-color: #594f4f;
+}
