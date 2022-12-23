@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+
+:root {
+	--title-font-size: 30px;
+	--general-font-size: 15px;
+	--blend-mode: lighten;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+main {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+}
+
+.login-content {
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#title {
+	font-size: var(--title-font-size);
+	font-family: "Roboto", sans-serif;
+	margin-bottom: 15vh;
+}
+
+.login-content__item {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.welcome > h2 {
+	font-size: var(--title-font-size);
+	font-weight: 600;
+	margin-bottom: 13px;
+}
+
+.welcome > p {
+	font-size: var(--general-font-size);
+	margin-bottom: 40px;
+}
+
+.login-form {
+	width: 100%;
+}
+
+.login-form__item {
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.login-form__item > label {
+	position: absolute;
+	transform: translate(20px, -50%);
+	background: #fff;
+	padding: 0 5px;
+
+	font-size: 12px;
+	color: #a1a1a1;
+	user-select: none;
+}
+
+.login-form__item > input {
+	display: inline-block;
+	width: 100%;
+	padding: 13px 20px 10px 20px;
+	outline: none;
+	border-radius: 10px;
+	border: solid 1px #a1a1a1;
+	box-sizing: border-box;
+
+	font-size: var(--general-font-size);
+	font-weight: 500;
+}
+
+.login-form__item > input:focus {
+	border-color: blue;
+}
+
+.login-option {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 600;
+	justify-items: flex-end;
+}
+
+.login-option__item {
+	font-size: var(--general-font-size);
+	letter-spacing: 0.8px;
+}
+
+#rember-me {
+	bottom: 0;
+}
+
+.password-forgot {
+	text-decoration: none;
+	color: #000;
+}
+
+.login-buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.login-buttons > button {
+	width: 45%;
+	padding: 8px 0;
+	font-size: var(--general-font-size);
+	outline: none;
+	border: none;
+	border-radius: 5px;
+
+	background-color: #fff;
+	border: solid 1.2px #fa2652;
+
+	cursor: pointer;
+
+	transition: color 0.3s, background-color 0.5s;
+}
+
+.login-buttons > button:hover {
+	background-color: #fa2652;
+	color: #fff;
+}
+
+.login-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	z-index: -1;
+	overflow: hidden;
+	background-color: #102559;
+}
+
+.bubble-1 {
+	position: absolute;
+	content: " ";
+	height: 30vw;
+	width: 30vw;
+	border-radius: 50%;
+	background: #a70200;
+	mix-blend-mode: var(--blend-mode);
+	transform: translate(-30%, -30%);
+	animation: bubble 4s infinite ease-in-out;
+}
+
+.bubble-2 {
+	position: absolute;
+	content: " ";
+	height: 50vw;
+	width: 50vw;
+	border-radius: 50%;
+	background: #0501c5;
+	mix-blend-mode: var(--blend-mode);
+	right: 0;
+	transform: translate(10%, -70%);
+	animation: bubble 5s infinite ease-in-out;
+}
+
+.bubble-3 {
+	position: absolute;
+	content: " ";
+	height: 40vw;
+	width: 40vw;
+	border-radius: 50%;
+	background: #17e493;
+	bottom: 0;
+	left: 0;
+	mix-blend-mode: var(--blend-mode);
+	transform: translate(-10%, 40%);
+	animation: bubble 6s infinite ease-in-out;
+}
+
+.bubble-4 {
+	position: absolute;
+	content: " ";
+	height: 80vw;
+	width: 80vw;
+	border-radius: 50%;
+	background: #ff2857e1;
+	mix-blend-mode: var(--blend-mode);
+	right: 0;
+	transform: translate(40%, 0);
+
+	overflow: hidden;
+	animation: bubble 10s infinite ease-in-out;
+}
+
+.bubble-5 {
+	position: absolute;
+	content: " ";
+	height: 25vw;
+	width: 25vw;
+	border-radius: 50%;
+	background: #4b71a2;
+	mix-blend-mode: var(--blend-mode);
+	right: 0;
+	transform: translate(40%, 0);
+
+	overflow: hidden;
+	animation: bubble 10s infinite ease-in-out;
+}
+
+@keyframes bubble {
+	20% {
+		border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
+	}
+
+	40% {
+		border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
+	}
+
+	60% {
+		border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
+	}
+
+	80% {
+		border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
+	}
+}
+.login-background__title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+
+	color: #fff;
+	font-size: 8vw;
+	font-family: "Roboto", "sans-serif";
+}
