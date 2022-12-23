@@ -1,7 +1,7 @@
 # Pricing
 
 <p align="center">
-  <img src="./demo.gif" style="width: 800px;" />
+  <img src="./pic/demo.gif" style="width: 800px;" />
 </p>
 
 [dribbble의 Erşad Başbağ의 디자인](https://dribbble.com/shots/14070207-Pricing-Section-01/attachments/5689861?mode=media)을 적용해서 만든 페이지
