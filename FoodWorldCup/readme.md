@@ -1,7 +1,7 @@
 # 음식 월드컵
 
 <p align="center" style="max-width: 700px">
-  <img src="./home.PNG" />
+  <img src="./pic/foodWorldcup.png" />
 </p>
 
 <br/>
