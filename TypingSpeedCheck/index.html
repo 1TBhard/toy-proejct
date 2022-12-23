@@ -1,0 +1,55 @@
+<!DOCTYPE html5>
+
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="./main.css" />
+</head>
+
+<body>
+  <main class="container">
+    <div id="title" class="container__item">
+      <h1>Check Your Speed!</h1>
+      <progress id="progress" value="0" max=""></progress>
+    </div>
+
+    <div id="sentence-wrapper" class="container__item"></div>
+
+    <div class="container__item">
+      <input id="input-buffer" type="text" disabled autofocus />
+    </div>
+  </main>
+
+  <div id="top-right-wrapper">
+    <div id="timer">Time: 0s</div>
+    <div id="speed">Speed: 0/Min</div>
+  </div>
+
+  <div id="modal-wrapper" class="active">
+    <div id="modal-background"></div>
+    <div id="modal">
+      <div id="are-you-ready" class="container__item">
+        <p>Type in the input field the highlighted word.</p>
+        <p>
+          The correct words will turn
+          <span style="background-color: green;">green</span>.
+        </p>
+        <p>
+          Incorrect letters will turn
+          <span style="background-color: red;">red</span>.
+        </p>
+      </div>
+
+      <div id="result-speed"></div>
+
+      <div>
+        <button id="reload">start</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
