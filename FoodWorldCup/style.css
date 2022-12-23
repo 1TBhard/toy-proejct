@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&family=Poppins&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	font-family: "Poppins", sans-serif;
+}
+
+:root {
+	--general-font-size: 17px;
+	--middle-font-size: 30px;
+	--title-font-size: 40px;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+}
+
+.main__item {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.title {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.title > h1 {
+	font-size: var(--title-font-size);
+	margin-bottom: 10px;
+	font-family: "Pangolin", cursive;
+	letter-spacing: 2px;
+}
+
+.select-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.select-wrapper_vs {
+	position: absolute;
+	font-size: var(--title-font-size);
+}
+
+.select-wrapper__card {
+	display: flex;
+	flex-direction: column;
+
+	padding: 20px;
+	margin: 30px;
+
+	box-shadow: 0 0 3px 2px #b0b0b0;
+}
+
+.food-thumbnail {
+	width: auto;
+
+	height: 300px;
+
+	object-fit: cover;
+}
+
+.food-title {
+	text-align: center;
+	font-size: var(--middle-font-size);
+	width: 300px;
+	height: 40px;
+
+	/* 넘쳐나는 글자를 ... 처리 */
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.food-btn {
+	margin-top: 15px;
+	padding: 3px 0;
+
+	border: none;
+	border-radius: 5px;
+	box-shadow: #f65058 0px 3px 2px;
+
+	outline: none;
+	background-color: #f6868c;
+	color: #fff;
+
+	font-size: var(--middle-font-size);
+	font-weight: 700;
+	font-style: italic;
+}
+
+.food-btn:hover {
+	background-color: #fbde44;
+	color: #f65058;
+}
+
+.food-btn:active {
+	transform: translateY(3px);
+	box-shadow: none;
+}
+
+.you-choices {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.you-choices__title {
+	margin-bottom: 20px;
+}
+
+.ranking-table {
+	text-align: center;
+	border-spacing: 20px;
+}
+
+.ranking-table__row {
+	box-shadow: 0 0 2px 3px #b0b0b0;
+	border-radius: 5px;
+}
+
+.ranking-table__header {
+	padding: 20px 0;
+}
+
+.column-rank {
+	width: 50px;
+	font-size: var(--title-font-size);
+}
+.column-img {
+	width: 150px;
+}
+.column-name {
+	width: 200px;
+	font-size: var(--general-font-size);
+}
+.column-win {
+	width: 50px;
+	font-size: var(--middle-font-size);
+}
+
+.table-img {
+	width: 100%;
+	height: auto;
+}
+
+.ranking-table :nth-of-type(1) .medal {
+	color: gold;
+}
+
+.ranking-table :nth-of-type(2) .medal {
+	color: silver;
+}
+
+.ranking-table :nth-of-type(3) .medal {
+	color: burlywood;
+}
+
+/* ============================ modal 스타일 ============================ */
+.modal-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100vw;
+	height: 100vh;
+}
+
+.hidden {
+	left: -9999;
+}
+
+.modal-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	background-color: #0f0f0f;
+	opacity: 0.5;
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	padding: 20px 40px;
+
+	background-color: #fff;
+	border-radius: 5px;
+	font-size: var(--genal-font-size);
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.modal__title {
+	font-size: var(--middle-font-size);
+	text-align: center;
+}
+
+.modal__item {
+	margin-bottom: 20px;
+}
+
+.modal-img {
+	height: 400px;
+	width: auto;
+}
+
+.modal__vedioURL {
+	text-align: center;
+}
+
+.youtube-btn {
+	display: inline-block;
+	padding: 3px 0;
+	width: 100%;
+
+	box-shadow: #505cf0 0px 3px 2px;
+	background-color: #524cd0;
+	border-radius: 5px;
+
+	font-size: var(--general-font-size);
+	font-weight: 700;
+	letter-spacing: 1.2px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.youtube-btn:hover {
+	background-color: #f3f56e;
+	color: #000;
+}
+.youtube-btn:active {
+	transform: translateY(3px);
+	box-shadow: none;
+}
