@@ -1,7 +1,7 @@
 # 라이브 필터링
 
 <p align="center">
-  <img src="./live_user_filter.PNG" />
+  <img src="./pic/liveUserFilter.png" />
 </p>
 
 <br/>
