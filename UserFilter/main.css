@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+main {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translate(-50%, 0);
+
+	width: 300px;
+
+	box-shadow: 3px 4px 5px #afafaf;
+}
+
+.filter {
+	padding: 30px 20px;
+	background-color: #3e57db;
+}
+
+.filter__title {
+	font-family: "Noto Sans JP", sans-serif;
+	color: #fff;
+}
+
+.filter__sub-title {
+	font-family: "Noto Sans JP", sans-serif;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.filter__search--input {
+	border: none;
+	box-sizing: border-box;
+	border-radius: 20px;
+
+	width: 100%;
+	padding: 10px 15px;
+
+	background-color: #2b3d99;
+
+	font-size: 15px;
+	color: #fff;
+}
+
+.friends-container {
+	overflow-y: scroll;
+	max-height: 400px;
+}
+
+.card {
+	display: flex;
+	padding: 15px 20px;
+	text-decoration: none;
+	color: #000;
+}
+
+.card {
+	border-top: 1px solid #dfdfdf;
+}
+
+.img-container__img {
+	border-radius: 50%;
+}
+
+.description-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	white-space: nowrap;
+	overflow: hidden;
+	margin-left: 20px;
+}
+
+.description-container__name {
+	font-size: 17px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.description-container__location {
+	font-size: 12px;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
