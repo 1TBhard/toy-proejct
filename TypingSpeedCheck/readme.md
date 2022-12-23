@@ -1,5 +1,9 @@
 # Check Typing Spped
 
+<p align="center">
+  <img src="./pic/TypingSpeedCheck.png" />
+</p>
+
 ## 설명
 
 키보드 속도를 체크하는 프로젝트
